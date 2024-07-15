@@ -1,0 +1,18 @@
+
+To-Do List Project Description
+The To-Do List project is a simple web application designed for efficient task management. Users can add new tasks by typing into an input box and pressing the "Add" button or the Enter key. The application checks for duplicate tasks and alerts the user if a task already exists. Tasks can be marked as completed by clicking on them, and each task has a delete button to remove it from the list. Event listeners handle user interactions such as adding tasks, marking tasks as completed, and deleting tasks. Local storage is used to save the tasks, ensuring the list persists even after closing and reopening the browser.
+
+Key Features
+Add tasks via input box and Enter key.
+Prevent duplicate tasks with alerts.
+Prevent empty strings to be added as tasks.
+Mark tasks as completed by clicking.
+Delete tasks using a delete button.
+Use event listeners for efficient task management i.e. handle events like clicks and key presses.
+Use of browser local storage so that the tasks listed remain intact even on closing and re-opening the browser.
+
+Learnings derived:
+Use of browser local storage to save data.
+Use of event listeners to take care of clicks and key presses.
+Use of toggle to apply or remove a class from a HTML element.
+How elements are auto appended to a element in list, once the list becomes part of DOM.

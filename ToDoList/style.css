@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial;
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, rgb(3, 0, 151), #440042, #0d003b);
+  padding: 10px;
+}
+
+.to-do-app {
+  width: 100%;
+  max-width: 540px;
+  background: #f8f8f8;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.to-do-app h1 {
+  color: black;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.to-do-app img {
+  width: 100px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e8e7e7;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+#input-box {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  margin: none;
+  padding: none;
+  background-color: blue;
+  padding: 16px 50px;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /*Represents that there is no bullets and numbering*/
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  width: 100%;
+  user-select: none;
+  /*Text cannot be selected or highlighted by user*/
+  cursor: pointer;
+  position: relative;
+
+  opacity: 0.8;
+  border-color: black;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked_box.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 10px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/Tick.jpeg);
+}
+
+
+ul li cross {
+  position: absolute;
+  top: 16px;
+  right: 60px;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 155, 155);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 1.2px;
+  transition: hover 0.5s;
+
+}
+
+ul li cross:hover {
+  background-color: rgb(169, 0, 0);
+}
+
+ul li cross:active {
+  background-color: rgb(93, 0, 0);
+}
